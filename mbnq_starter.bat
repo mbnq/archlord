@@ -5,13 +5,19 @@ cls
 
 :: Runs first instance on all resources while running
 :: other instances minimised on 1 core to save resources
-:: Overkill rulez!
 
-:: config ----------
+:: ---------- config ----------
+
+:: put your game path here between ""
 set _gamePath="G:\Custom-Archlord (2)\Custom-Archlord\"
-set _runUpdate=TRUE
-set /a _runIT=2
-:: end of config ---
+
+:: Do you want to run update before launching? TRUE or FALSE
+set _runUpdate=FALSE
+
+:: How many clients do you want to be started? 
+set /a _runIT=5
+
+:: ------ end of config -------
 
 
 :: do not edit bellow!
