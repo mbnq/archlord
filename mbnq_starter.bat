@@ -9,7 +9,7 @@ cls
 :: ---------- config ----------
 
 :: put your game path here between ""
-set _gamePath="G:\Custom-Archlord (2)\Custom-Archlord\"
+set _gamePath="G:\games\Custom-Archlord\"
 
 :: Do you want to run update before launching? TRUE or FALSE
 set _runUpdate=FALSE
@@ -26,7 +26,7 @@ set /a _pauseTime=5
 cd /d %_gamePath%
 
 if not exist AlefClient.exe goto ERROR0
-if not exist AlefLauncher.exe goto ERROR0
+if not exist #Custom-Archlord.exe goto ERROR0
 if %_runIT% LSS 1 goto ERROR1
 if %_runIT% GTR 16 goto ERROR1
 
@@ -35,7 +35,7 @@ echo:You may need to start this as administrator^.
 if NOT %_runUpdate%==TRUE goto bypassUpdate
 echo:Updating...
 echo:Wait 15s or press any key to stop updating...
-start AlefLauncher.exe
+start #Custom-Archlord.exe
 timeout /t 15 > nul
 taskkill /F /IM "javaw.exe" > nul
 
