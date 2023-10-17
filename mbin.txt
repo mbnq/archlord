@@ -7,7 +7,7 @@
 bAuto=TRUE;
 _mbnqTestCounter=0;
 _posSpacing=100;
-_mbnqCounter = 2000;			-- start from here
+_mbnqCounter = 2000;		-- start from here
 _mbnqUpperLimit = 3000;		-- end searching here
 _mbnqSelector=0;
 _xPos=202068;
