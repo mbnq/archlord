@@ -2,14 +2,12 @@
 		Written by mbnq.pl
 		10.2023
 		v.0.2
-		
-		/lua dofile("mbin.txt")
 ]]
 
 bAuto=TRUE;
 _mbnqTestCounter=0;
 _posSpacing=100;
-_mbnqCounter = 1;			-- start from here
+_mbnqCounter = 1;		-- start from here
 _mbnqUpperLimit = 7370;		-- end searching here
 _mbnqSelector=0;
 _xPos=55281;
