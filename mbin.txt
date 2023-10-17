@@ -1,22 +1,19 @@
 --[[
 		Written by mbnq.pl
 		10.2023
-		v.0.2
-		/lua dofile("mbin.txt")
+		v.0.4
 ]]
 
 bAuto=TRUE;
 _mbnqTestCounter=0;
 _posSpacing=100;
-_mbnqCounter = 1;		-- start from here
-_mbnqUpperLimit = 7370;		-- end searching here
+_mbnqCounter = 2000;			-- start from here
+_mbnqUpperLimit = 3000;		-- end searching here
 _mbnqSelector=0;
-_xPos=55281;
-_yPos=284973;
+_xPos=202068;
+_yPos=244972;
 
 MessageBox("\n<:HFF0000>Mbnq Inject: initialized!\n",bAuto);
-
-
 
 while( _mbnqCounter < _mbnqUpperLimit )
 	do
@@ -35,10 +32,20 @@ while( _mbnqCounter < _mbnqUpperLimit )
 				
 				if((math.random(2))==1)
 					then
-						UpdatePosition( _mbnqSpawnObject , _xPos+(math.random(_posSpacing)), _yPos+(math.random(_posSpacing)) );
+						if((math.random(2))==1)
+							then
+								UpdatePosition( _mbnqSpawnObject , _xPos+(math.random(_posSpacing)), _yPos+(math.random(_posSpacing)) );
+							else
+								UpdatePosition( _mbnqSpawnObject , _xPos-(math.random(_posSpacing)), _yPos-(math.random(_posSpacing)) );
+						end				
 					else
-						UpdatePosition( _mbnqSpawnObject , _xPos-(math.random(_posSpacing)), _yPos-(math.random(_posSpacing)) );
-				end				
+						if((math.random(2))==1)
+							then
+								UpdatePosition( _mbnqSpawnObject , _xPos-(math.random(_posSpacing)), _yPos+(math.random(_posSpacing)) );
+							else
+								UpdatePosition( _mbnqSpawnObject , _xPos+(math.random(_posSpacing)), _yPos-(math.random(_posSpacing)) );
+						end	
+					end				
 
 				TurnCharacter(_mbnqSpawnObject,0,(math.random(360)));
 
