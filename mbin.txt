@@ -2,6 +2,7 @@
 		Written by mbnq.pl
 		10.2023
 		v.0.2
+		/lua dofile("mbin.txt")
 ]]
 
 bAuto=TRUE;
