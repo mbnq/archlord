@@ -1,0 +1,50 @@
+--[[
+		Written by mbnq.pl
+		10.2023
+		v.0.2
+		
+		/lua dofile("mbin.txt")
+]]
+
+bAuto=TRUE;
+_mbnqTestCounter=0;
+_posSpacing=100;
+_mbnqCounter = 1;			-- start from here
+_mbnqUpperLimit = 7370;		-- end searching here
+_mbnqSelector=0;
+_xPos=55281;
+_yPos=284973;
+
+MessageBox("\n<:HFF0000>Mbnq Inject: initialized!\n",bAuto);
+
+
+
+while( _mbnqCounter < _mbnqUpperLimit )
+	do
+		_mbnqCounter = _mbnqCounter+1;		
+
+		MessageBox( "<:HFF0000>[Mbnq Inject] character spawned!" );
+
+		_mbnqSpawnObject=AddCharacter(_mbnqCounter,("mbnq_".._mbnqCounter),_mbnqCounter);
+		
+		if(_mbnqSpawnObject > 0)
+			then
+				MessageBox(_mbnqSpawnObject);	
+				_mbnqTestCounter = _mbnqTestCounter + 1;
+				
+				_posSpacing=(_mbnqTestCounter*(50+(math.random(50))));
+				
+				if((math.random(2))==1)
+					then
+						UpdatePosition( _mbnqSpawnObject , _xPos+(math.random(_posSpacing)), _yPos+(math.random(_posSpacing)) );
+					else
+						UpdatePosition( _mbnqSpawnObject , _xPos-(math.random(_posSpacing)), _yPos-(math.random(_posSpacing)) );
+				end				
+
+				TurnCharacter(_mbnqSpawnObject,0,(math.random(360)));
+
+				-- MessageBox( "<:HFF0000>[Mbnq Inject] character moved!" );				
+			end
+	end
+	
+MessageBox( "<:HFF0000>[Mbnq Inject] done!" );	
