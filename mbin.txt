@@ -9,7 +9,8 @@
 				/lua dofile("mbin.txt")
 		Use:
 				/fps
-		to find coordinates.
+		to find coordinates, they are displayed in
+		format x, z, y
 
 		You can also use console ingame pressing keys:
 		CTRL+SHIFT+ALT+/
