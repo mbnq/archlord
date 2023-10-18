@@ -10,6 +10,9 @@
 		Use:
 				/fps
 		to find coordinates.
+
+		You can also use console ingame pressing keys:
+		CTRL+SHIFT+ALT+/
 ]]
 
 bAuto=TRUE;
