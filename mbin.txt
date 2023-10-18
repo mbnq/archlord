@@ -15,7 +15,6 @@
 		You can also use console ingame pressing keys:
 		CTRL+SHIFT+ALT+/
 		However you have to know how to enable and use it.
-
 ]]
 
 bAuto=TRUE;
