@@ -6,7 +6,7 @@
 	Usage:
 		Place mbin.txt next to AlefClient.exe
 		Enter ingame console:
-				/lua dofile("test.txt")
+				/lua dofile("mbin.txt")
 		Use:
 				/fps
 		to find coordinates.
