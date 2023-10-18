@@ -10,13 +10,13 @@
 ]]
 
 bAuto=TRUE;
-_mbnqTestCounter=0;
-_posSpacing=10000;
+_mbnqTestCounter=0;		-- n/c
+_posSpacing=10000;		-- edit spacing between chars here
 _mbnqCounter = 2000;		-- start from here
 _mbnqUpperLimit = 3000;		-- end searching here
-_mbnqSelector=0;
-_xPos=202068;
-_yPos=244972;
+_mbnqSelector=0;		-- n/c
+_xPos=202068;			-- enter xpos here
+_yPos=244972;			-- enter ypos here
 
 MessageBox("\n<:HFF0000>Mbnq Inject: initialized!\n",bAuto);
 
