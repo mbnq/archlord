@@ -7,6 +7,9 @@
 		Place mbin.txt next to AlefClient.exe
 		Enter ingame console:
 				/lua dofile("test.txt")
+		Use:
+				/fps
+		to find coordinates.
 ]]
 
 bAuto=TRUE;
