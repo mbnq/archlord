@@ -16,8 +16,6 @@
 		CTRL+SHIFT+ALT+/
 		However you have to know how to enable and use it.
 
-	PS:
-		Fuck you Custom Archlord
 ]]
 
 bAuto=TRUE;
