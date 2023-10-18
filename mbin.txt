@@ -2,6 +2,11 @@
 		Written by mbnq.pl
 		10.2023
 		v.0.4
+
+	Usage:
+		Place mbin.txt next to AlefClient.exe
+		Enter ingame console:
+				/lua dofile("test.txt")
 ]]
 
 bAuto=TRUE;
