@@ -32,7 +32,7 @@ while( _mbnqCounter < _mbnqUpperLimit )
 	do
 		_mbnqCounter = _mbnqCounter+1;		
 
-		MessageBox( "<:HFF0000>[Mbnq Inject] Searching..." );
+		MessageBox( "<:HFF0000>[Mbnq Inject] searching..." );
 
 		_mbnqSpawnObject=AddCharacter(_mbnqCounter,("mbnq_".._mbnqCounter),_mbnqCounter);
 		
