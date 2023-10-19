@@ -38,7 +38,7 @@ while( _mbnqCounter < _mbnqUpperLimit )
 		
 		if(_mbnqSpawnObject > 0)
 			then
-				MessageBox( "<:HFF0000>[Mbnq Inject] character found and spawned!" );
+				MessageBox( "<:HFF0000>[Mbnq Inject] Character found and spawned!" );
 
 				MessageBox(_mbnqSpawnObject);	
 				_mbnqTestCounter = _mbnqTestCounter + 1;
