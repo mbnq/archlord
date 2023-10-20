@@ -26,19 +26,19 @@ _mbnqSelector=0;		-- n/c
 _xPos=202068;			-- enter xpos here
 _yPos=244972;			-- enter ypos here
 
-MessageBox("\n<:HFF0000>Mbnq Inject: initialized!\n",bAuto);
+MessageBox("\n<:HFF0000>Inject: initialized!\n",bAuto);
 
 while( _mbnqCounter < _mbnqUpperLimit )
 	do
 		_mbnqCounter = _mbnqCounter+1;		
 
-		MessageBox( "<:HFF0000>[Mbnq Inject] searching..." );
+		MessageBox( "<:HFF0000>[Inject] searching..." );
 
 		_mbnqSpawnObject=AddCharacter(_mbnqCounter,("mbnq_".._mbnqCounter),_mbnqCounter);
 		
 		if(_mbnqSpawnObject > 0)
 			then
-				MessageBox( "<:HFF0000>[Mbnq Inject] Character found and spawned!" );
+				MessageBox( "<:HFF0000>[Inject] Character found and spawned!" );
 
 				MessageBox(_mbnqSpawnObject);	
 				_mbnqTestCounter = _mbnqTestCounter + 1;
@@ -64,7 +64,7 @@ while( _mbnqCounter < _mbnqUpperLimit )
 
 				TurnCharacter(_mbnqSpawnObject,0,(math.random(360)));
 
-				-- MessageBox( "<:HFF0000>[Mbnq Inject] character moved!" );				
+				-- MessageBox( "<:HFF0000>[Inject] character moved!" );				
 			end
 	end
 	
